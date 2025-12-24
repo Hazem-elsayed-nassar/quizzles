@@ -36,16 +36,9 @@ class HomeView extends StatelessWidget {
   Widget _buildLogoSection() {
     return Column(
       children: [
-        Image.asset('assets/images/logo.png', height: 180),
+        Image.asset('assets/images/logo.png', height: 300),
         const SizedBox(height: 20),
-        const Text(
-          "Quizzles",
-          style: TextStyle(
-            fontSize: 42,
-            fontWeight: FontWeight.bold,
-            color: AppColors.accentColor,
-          ),
-        ),
+       
       ],
     );
   }
