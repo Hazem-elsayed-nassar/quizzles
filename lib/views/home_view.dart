@@ -36,7 +36,7 @@ class HomeView extends StatelessWidget {
   Widget _buildLogoSection() {
     return Column(
       children: [
-        Image.asset('assets/images/logo.png', height: 300),
+        Image.asset('assets/images/logo.png', height: 600, width: 700),
         const SizedBox(height: 20),
        
       ],
@@ -45,6 +45,7 @@ class HomeView extends StatelessWidget {
 
   Widget _buildActionSection(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         ElevatedButton(
           onPressed: () => _controller.navigateToLevels(context),
