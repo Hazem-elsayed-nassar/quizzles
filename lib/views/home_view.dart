@@ -38,7 +38,6 @@ class HomeView extends StatelessWidget {
       children: [
         Image.asset('assets/images/logo.png', height: 600, width: 700),
         const SizedBox(height: 20),
-       
       ],
     );
   }
@@ -52,7 +51,9 @@ class HomeView extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             backgroundColor: AppColors.purpleBtn,
             padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 15),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15),
+            ),
           ),
           child: const Text(
             "Play Now",
